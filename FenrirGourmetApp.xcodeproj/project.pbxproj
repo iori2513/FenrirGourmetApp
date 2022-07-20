@@ -17,6 +17,7 @@
 		76BC8C8428878EF5007A895B /* FenrirGourmetAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC8C8328878EF5007A895B /* FenrirGourmetAppUITests.swift */; };
 		76BC8C8628878EF5007A895B /* FenrirGourmetAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC8C8528878EF5007A895B /* FenrirGourmetAppUITestsLaunchTests.swift */; };
 		76BC8C9328879EB1007A895B /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC8C9228879EB0007A895B /* SearchResultViewController.swift */; };
+		76BC8C9528879FE7007A895B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC8C9428879FE7007A895B /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		76BC8C8328878EF5007A895B /* FenrirGourmetAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FenrirGourmetAppUITests.swift; sourceTree = "<group>"; };
 		76BC8C8528878EF5007A895B /* FenrirGourmetAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FenrirGourmetAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		76BC8C9228879EB0007A895B /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		76BC8C9428879FE7007A895B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				76BC8C6628878EF4007A895B /* SearchViewController.swift */,
 				76BC8C9228879EB0007A895B /* SearchResultViewController.swift */,
 				76BC8C6828878EF4007A895B /* Main.storyboard */,
+				76BC8C9428879FE7007A895B /* DetailViewController.swift */,
 				76BC8C6B28878EF5007A895B /* Assets.xcassets */,
 				76BC8C6D28878EF5007A895B /* LaunchScreen.storyboard */,
 				76BC8C7028878EF5007A895B /* Info.plist */,
@@ -263,6 +266,7 @@
 			files = (
 				76BC8C9328879EB1007A895B /* SearchResultViewController.swift in Sources */,
 				76BC8C6728878EF4007A895B /* SearchViewController.swift in Sources */,
+				76BC8C9528879FE7007A895B /* DetailViewController.swift in Sources */,
 				76BC8C6328878EF4007A895B /* AppDelegate.swift in Sources */,
 				76BC8C6528878EF4007A895B /* SceneDelegate.swift in Sources */,
 			);

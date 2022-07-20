@@ -79,10 +79,29 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="vcH-by-neL"/>
+                    <connections>
+                        <segue destination="4RG-aI-Wbs" kind="show" id="Dmf-um-jy1"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0G0-am-zn3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="886" y="54"/>
+        </scene>
+        <!--DetailViewController-->
+        <scene sceneID="AM7-TX-YjV">
+            <objects>
+                <viewController title="DetailViewController" modalPresentationStyle="fullScreen" id="4RG-aI-Wbs" customClass="DetailViewController" customModule="FenrirGourmetApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d82-UA-WuF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="vbc-pk-on7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dtR-c5-dOH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l6e-YB-AQw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1717" y="54"/>
         </scene>
     </scenes>
     <resources>
