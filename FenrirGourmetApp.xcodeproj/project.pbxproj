@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		76BC8C6328878EF4007A895B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC8C6228878EF4007A895B /* AppDelegate.swift */; };
 		76BC8C6528878EF4007A895B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC8C6428878EF4007A895B /* SceneDelegate.swift */; };
-		76BC8C6728878EF4007A895B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC8C6628878EF4007A895B /* ViewController.swift */; };
+		76BC8C6728878EF4007A895B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC8C6628878EF4007A895B /* SearchViewController.swift */; };
 		76BC8C6A28878EF4007A895B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76BC8C6828878EF4007A895B /* Main.storyboard */; };
 		76BC8C6C28878EF5007A895B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76BC8C6B28878EF5007A895B /* Assets.xcassets */; };
 		76BC8C6F28878EF5007A895B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76BC8C6D28878EF5007A895B /* LaunchScreen.storyboard */; };
 		76BC8C7A28878EF5007A895B /* FenrirGourmetAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC8C7928878EF5007A895B /* FenrirGourmetAppTests.swift */; };
 		76BC8C8428878EF5007A895B /* FenrirGourmetAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC8C8328878EF5007A895B /* FenrirGourmetAppUITests.swift */; };
 		76BC8C8628878EF5007A895B /* FenrirGourmetAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC8C8528878EF5007A895B /* FenrirGourmetAppUITestsLaunchTests.swift */; };
+		76BC8C9328879EB1007A895B /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC8C9228879EB0007A895B /* SearchResultViewController.swift */; };
+		76BC8C9528879FE7007A895B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC8C9428879FE7007A895B /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,7 @@
 		76BC8C5F28878EF4007A895B /* FenrirGourmetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FenrirGourmetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76BC8C6228878EF4007A895B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76BC8C6428878EF4007A895B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		76BC8C6628878EF4007A895B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		76BC8C6628878EF4007A895B /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		76BC8C6928878EF4007A895B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76BC8C6B28878EF5007A895B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76BC8C6E28878EF5007A895B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		76BC8C7F28878EF5007A895B /* FenrirGourmetAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FenrirGourmetAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76BC8C8328878EF5007A895B /* FenrirGourmetAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FenrirGourmetAppUITests.swift; sourceTree = "<group>"; };
 		76BC8C8528878EF5007A895B /* FenrirGourmetAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FenrirGourmetAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		76BC8C9228879EB0007A895B /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		76BC8C9428879FE7007A895B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +105,8 @@
 			children = (
 				76BC8C6228878EF4007A895B /* AppDelegate.swift */,
 				76BC8C6428878EF4007A895B /* SceneDelegate.swift */,
-				76BC8C6628878EF4007A895B /* ViewController.swift */,
-				76BC8C6828878EF4007A895B /* Main.storyboard */,
+				76BC8C972887A40D007A895B /* View */,
+				76BC8C962887A3F5007A895B /* Controllers */,
 				76BC8C6B28878EF5007A895B /* Assets.xcassets */,
 				76BC8C6D28878EF5007A895B /* LaunchScreen.storyboard */,
 				76BC8C7028878EF5007A895B /* Info.plist */,
@@ -125,6 +129,24 @@
 				76BC8C8528878EF5007A895B /* FenrirGourmetAppUITestsLaunchTests.swift */,
 			);
 			path = FenrirGourmetAppUITests;
+			sourceTree = "<group>";
+		};
+		76BC8C962887A3F5007A895B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				76BC8C6628878EF4007A895B /* SearchViewController.swift */,
+				76BC8C9228879EB0007A895B /* SearchResultViewController.swift */,
+				76BC8C9428879FE7007A895B /* DetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		76BC8C972887A40D007A895B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				76BC8C6828878EF4007A895B /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +280,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76BC8C6728878EF4007A895B /* ViewController.swift in Sources */,
+				76BC8C9328879EB1007A895B /* SearchResultViewController.swift in Sources */,
+				76BC8C6728878EF4007A895B /* SearchViewController.swift in Sources */,
+				76BC8C9528879FE7007A895B /* DetailViewController.swift in Sources */,
 				76BC8C6328878EF4007A895B /* AppDelegate.swift in Sources */,
 				76BC8C6528878EF4007A895B /* SceneDelegate.swift in Sources */,
 			);
