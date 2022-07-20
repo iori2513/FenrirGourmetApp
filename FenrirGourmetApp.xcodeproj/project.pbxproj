@@ -105,10 +105,8 @@
 			children = (
 				76BC8C6228878EF4007A895B /* AppDelegate.swift */,
 				76BC8C6428878EF4007A895B /* SceneDelegate.swift */,
-				76BC8C6628878EF4007A895B /* SearchViewController.swift */,
-				76BC8C9228879EB0007A895B /* SearchResultViewController.swift */,
-				76BC8C6828878EF4007A895B /* Main.storyboard */,
-				76BC8C9428879FE7007A895B /* DetailViewController.swift */,
+				76BC8C972887A40D007A895B /* View */,
+				76BC8C962887A3F5007A895B /* Controllers */,
 				76BC8C6B28878EF5007A895B /* Assets.xcassets */,
 				76BC8C6D28878EF5007A895B /* LaunchScreen.storyboard */,
 				76BC8C7028878EF5007A895B /* Info.plist */,
@@ -131,6 +129,24 @@
 				76BC8C8528878EF5007A895B /* FenrirGourmetAppUITestsLaunchTests.swift */,
 			);
 			path = FenrirGourmetAppUITests;
+			sourceTree = "<group>";
+		};
+		76BC8C962887A3F5007A895B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				76BC8C6628878EF4007A895B /* SearchViewController.swift */,
+				76BC8C9228879EB0007A895B /* SearchResultViewController.swift */,
+				76BC8C9428879FE7007A895B /* DetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		76BC8C972887A40D007A895B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				76BC8C6828878EF4007A895B /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
