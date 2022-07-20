@@ -9,10 +9,20 @@ import UIKit
 
 class SearchViewController: UIViewController {
 
+    
+    @IBOutlet weak var distancePicker: UIPickerView!
+    @IBOutlet weak var button: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func didTapButton(_ sender: Any) {
+        performSegue(withIdentifier: "searchResult", sender: self)
+    }
+    
 
 
 }

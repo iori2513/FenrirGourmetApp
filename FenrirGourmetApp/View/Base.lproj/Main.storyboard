@@ -28,11 +28,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HiQ-Px-zbi"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lTq-xf-U5e">
                                 <rect key="frame" x="27" y="159" width="343.5" height="216"/>
                                 <subviews>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rXg-Hd-OWg">
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rXg-Hd-OWg" userLabel="distancePicker">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
                                     </pickerView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OK6-d4-MNS">
@@ -48,6 +51,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="button" destination="Hm0-7t-eY6" id="Nnl-ZZ-BAX"/>
+                        <outlet property="distancePicker" destination="rXg-Hd-OWg" id="ZUH-GG-K2d"/>
                         <segue destination="uob-3d-6pZ" kind="show" identifier="searchResult" id="g2k-ZJ-dCJ"/>
                     </connections>
                 </viewController>
