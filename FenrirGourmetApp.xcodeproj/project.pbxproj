@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76BC8C6328878EF4007A895B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC8C6228878EF4007A895B /* AppDelegate.swift */; };
+		76BC8C6528878EF4007A895B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC8C6428878EF4007A895B /* SceneDelegate.swift */; };
+		76BC8C6728878EF4007A895B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC8C6628878EF4007A895B /* ViewController.swift */; };
+		76BC8C6A28878EF4007A895B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76BC8C6828878EF4007A895B /* Main.storyboard */; };
+		76BC8C6C28878EF5007A895B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76BC8C6B28878EF5007A895B /* Assets.xcassets */; };
+		76BC8C6F28878EF5007A895B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76BC8C6D28878EF5007A895B /* LaunchScreen.storyboard */; };
+		76BC8C7A28878EF5007A895B /* FenrirGourmetAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC8C7928878EF5007A895B /* FenrirGourmetAppTests.swift */; };
+		76BC8C8428878EF5007A895B /* FenrirGourmetAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC8C8328878EF5007A895B /* FenrirGourmetAppUITests.swift */; };
+		76BC8C8628878EF5007A895B /* FenrirGourmetAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC8C8528878EF5007A895B /* FenrirGourmetAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		76BC8C7628878EF5007A895B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76BC8C5728878EF4007A895B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76BC8C5E28878EF4007A895B;
+			remoteInfo = FenrirGourmetApp;
+		};
+		76BC8C8028878EF5007A895B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76BC8C5728878EF4007A895B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76BC8C5E28878EF4007A895B;
+			remoteInfo = FenrirGourmetApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		76BC8C5F28878EF4007A895B /* FenrirGourmetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FenrirGourmetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76BC8C6228878EF4007A895B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		76BC8C6428878EF4007A895B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		76BC8C6628878EF4007A895B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		76BC8C6928878EF4007A895B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		76BC8C6B28878EF5007A895B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		76BC8C6E28878EF5007A895B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		76BC8C7028878EF5007A895B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76BC8C7528878EF5007A895B /* FenrirGourmetAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FenrirGourmetAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76BC8C7928878EF5007A895B /* FenrirGourmetAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FenrirGourmetAppTests.swift; sourceTree = "<group>"; };
+		76BC8C7F28878EF5007A895B /* FenrirGourmetAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FenrirGourmetAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76BC8C8328878EF5007A895B /* FenrirGourmetAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FenrirGourmetAppUITests.swift; sourceTree = "<group>"; };
+		76BC8C8528878EF5007A895B /* FenrirGourmetAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FenrirGourmetAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76BC8C5C28878EF4007A895B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76BC8C7228878EF5007A895B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76BC8C7C28878EF5007A895B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76BC8C5628878EF4007A895B = {
+			isa = PBXGroup;
+			children = (
+				76BC8C6128878EF4007A895B /* FenrirGourmetApp */,
+				76BC8C7828878EF5007A895B /* FenrirGourmetAppTests */,
+				76BC8C8228878EF5007A895B /* FenrirGourmetAppUITests */,
+				76BC8C6028878EF4007A895B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		76BC8C6028878EF4007A895B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76BC8C5F28878EF4007A895B /* FenrirGourmetApp.app */,
+				76BC8C7528878EF5007A895B /* FenrirGourmetAppTests.xctest */,
+				76BC8C7F28878EF5007A895B /* FenrirGourmetAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76BC8C6128878EF4007A895B /* FenrirGourmetApp */ = {
+			isa = PBXGroup;
+			children = (
+				76BC8C6228878EF4007A895B /* AppDelegate.swift */,
+				76BC8C6428878EF4007A895B /* SceneDelegate.swift */,
+				76BC8C6628878EF4007A895B /* ViewController.swift */,
+				76BC8C6828878EF4007A895B /* Main.storyboard */,
+				76BC8C6B28878EF5007A895B /* Assets.xcassets */,
+				76BC8C6D28878EF5007A895B /* LaunchScreen.storyboard */,
+				76BC8C7028878EF5007A895B /* Info.plist */,
+			);
+			path = FenrirGourmetApp;
+			sourceTree = "<group>";
+		};
+		76BC8C7828878EF5007A895B /* FenrirGourmetAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				76BC8C7928878EF5007A895B /* FenrirGourmetAppTests.swift */,
+			);
+			path = FenrirGourmetAppTests;
+			sourceTree = "<group>";
+		};
+		76BC8C8228878EF5007A895B /* FenrirGourmetAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				76BC8C8328878EF5007A895B /* FenrirGourmetAppUITests.swift */,
+				76BC8C8528878EF5007A895B /* FenrirGourmetAppUITestsLaunchTests.swift */,
+			);
+			path = FenrirGourmetAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76BC8C5E28878EF4007A895B /* FenrirGourmetApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76BC8C8928878EF5007A895B /* Build configuration list for PBXNativeTarget "FenrirGourmetApp" */;
+			buildPhases = (
+				76BC8C5B28878EF4007A895B /* Sources */,
+				76BC8C5C28878EF4007A895B /* Frameworks */,
+				76BC8C5D28878EF4007A895B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FenrirGourmetApp;
+			productName = FenrirGourmetApp;
+			productReference = 76BC8C5F28878EF4007A895B /* FenrirGourmetApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		76BC8C7428878EF5007A895B /* FenrirGourmetAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76BC8C8C28878EF5007A895B /* Build configuration list for PBXNativeTarget "FenrirGourmetAppTests" */;
+			buildPhases = (
+				76BC8C7128878EF5007A895B /* Sources */,
+				76BC8C7228878EF5007A895B /* Frameworks */,
+				76BC8C7328878EF5007A895B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76BC8C7728878EF5007A895B /* PBXTargetDependency */,
+			);
+			name = FenrirGourmetAppTests;
+			productName = FenrirGourmetAppTests;
+			productReference = 76BC8C7528878EF5007A895B /* FenrirGourmetAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		76BC8C7E28878EF5007A895B /* FenrirGourmetAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76BC8C8F28878EF5007A895B /* Build configuration list for PBXNativeTarget "FenrirGourmetAppUITests" */;
+			buildPhases = (
+				76BC8C7B28878EF5007A895B /* Sources */,
+				76BC8C7C28878EF5007A895B /* Frameworks */,
+				76BC8C7D28878EF5007A895B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76BC8C8128878EF5007A895B /* PBXTargetDependency */,
+			);
+			name = FenrirGourmetAppUITests;
+			productName = FenrirGourmetAppUITests;
+			productReference = 76BC8C7F28878EF5007A895B /* FenrirGourmetAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76BC8C5728878EF4007A895B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					76BC8C5E28878EF4007A895B = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					76BC8C7428878EF5007A895B = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 76BC8C5E28878EF4007A895B;
+					};
+					76BC8C7E28878EF5007A895B = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 76BC8C5E28878EF4007A895B;
+					};
+				};
+			};
+			buildConfigurationList = 76BC8C5A28878EF4007A895B /* Build configuration list for PBXProject "FenrirGourmetApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 76BC8C5628878EF4007A895B;
+			productRefGroup = 76BC8C6028878EF4007A895B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76BC8C5E28878EF4007A895B /* FenrirGourmetApp */,
+				76BC8C7428878EF5007A895B /* FenrirGourmetAppTests */,
+				76BC8C7E28878EF5007A895B /* FenrirGourmetAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76BC8C5D28878EF4007A895B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76BC8C6F28878EF5007A895B /* LaunchScreen.storyboard in Resources */,
+				76BC8C6C28878EF5007A895B /* Assets.xcassets in Resources */,
+				76BC8C6A28878EF4007A895B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76BC8C7328878EF5007A895B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76BC8C7D28878EF5007A895B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76BC8C5B28878EF4007A895B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76BC8C6728878EF4007A895B /* ViewController.swift in Sources */,
+				76BC8C6328878EF4007A895B /* AppDelegate.swift in Sources */,
+				76BC8C6528878EF4007A895B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76BC8C7128878EF5007A895B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76BC8C7A28878EF5007A895B /* FenrirGourmetAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76BC8C7B28878EF5007A895B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76BC8C8628878EF5007A895B /* FenrirGourmetAppUITestsLaunchTests.swift in Sources */,
+				76BC8C8428878EF5007A895B /* FenrirGourmetAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76BC8C7728878EF5007A895B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76BC8C5E28878EF4007A895B /* FenrirGourmetApp */;
+			targetProxy = 76BC8C7628878EF5007A895B /* PBXContainerItemProxy */;
+		};
+		76BC8C8128878EF5007A895B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76BC8C5E28878EF4007A895B /* FenrirGourmetApp */;
+			targetProxy = 76BC8C8028878EF5007A895B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		76BC8C6828878EF4007A895B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76BC8C6928878EF4007A895B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		76BC8C6D28878EF5007A895B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76BC8C6E28878EF5007A895B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		76BC8C8728878EF5007A895B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		76BC8C8828878EF5007A895B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		76BC8C8A28878EF5007A895B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 48WF4HC6TB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FenrirGourmetApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.FenrirGourmetApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		76BC8C8B28878EF5007A895B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 48WF4HC6TB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FenrirGourmetApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.FenrirGourmetApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		76BC8C8D28878EF5007A895B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 48WF4HC6TB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.FenrirGourmetAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FenrirGourmetApp.app/FenrirGourmetApp";
+			};
+			name = Debug;
+		};
+		76BC8C8E28878EF5007A895B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 48WF4HC6TB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.FenrirGourmetAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FenrirGourmetApp.app/FenrirGourmetApp";
+			};
+			name = Release;
+		};
+		76BC8C9028878EF5007A895B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 48WF4HC6TB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.FenrirGourmetAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FenrirGourmetApp;
+			};
+			name = Debug;
+		};
+		76BC8C9128878EF5007A895B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 48WF4HC6TB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.FenrirGourmetAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FenrirGourmetApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76BC8C5A28878EF4007A895B /* Build configuration list for PBXProject "FenrirGourmetApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76BC8C8728878EF5007A895B /* Debug */,
+				76BC8C8828878EF5007A895B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76BC8C8928878EF5007A895B /* Build configuration list for PBXNativeTarget "FenrirGourmetApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76BC8C8A28878EF5007A895B /* Debug */,
+				76BC8C8B28878EF5007A895B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76BC8C8C28878EF5007A895B /* Build configuration list for PBXNativeTarget "FenrirGourmetAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76BC8C8D28878EF5007A895B /* Debug */,
+				76BC8C8E28878EF5007A895B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76BC8C8F28878EF5007A895B /* Build configuration list for PBXNativeTarget "FenrirGourmetAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76BC8C9028878EF5007A895B /* Debug */,
+				76BC8C9128878EF5007A895B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76BC8C5728878EF4007A895B /* Project object */;
+}
