@@ -16,10 +16,12 @@ class SearchViewController: UIViewController, CLLocationManagerDelegate {
     
     let locationManager = CLLocationManager()
     var userLocation: Location!
+    let dataList = Array(1...100)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setLocationManager()
+        print(dataList)
     }
     
     @IBAction func didTapButton(_ sender: Any) {
@@ -58,3 +60,32 @@ class SearchViewController: UIViewController, CLLocationManagerDelegate {
 
 }
 
+extension SearchViewController: UIPickerViewDataSource, UIPickerViewDelegate {
+    // UIPickerViewの列の数
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+     
+    // UIPickerViewの行数、要素の全数
+    func pickerView(_ pickerView: UIPickerView,
+                    numberOfRowsInComponent component: Int) -> Int {
+        return dataList.count
+    }
+     
+    // UIPickerViewに表示する配列
+    internal func pickerView(_ pickerView: UIPickerView,
+                    titleForRow row: Int,
+                    forComponent component: Int) -> String? {
+        
+        return "\(dataList[row])"
+    }
+     
+    // UIPickerViewのRowが選択された時の挙動
+    func pickerView(_ pickerView: UIPickerView,
+                    didSelectRow row: Int,
+                    inComponent component: Int) {
+        // 処理
+        return
+    }
+    
+}
