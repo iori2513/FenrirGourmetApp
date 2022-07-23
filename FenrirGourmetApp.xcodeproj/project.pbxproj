@@ -20,6 +20,10 @@
 		76BC8C9528879FE7007A895B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC8C9428879FE7007A895B /* DetailViewController.swift */; };
 		76BC8C9A2887B931007A895B /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC8C992887B931007A895B /* LocationModel.swift */; };
 		76BC8C9D288BA16E007A895B /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC8C9C288BA16E007A895B /* API.swift */; };
+		76BC8C9F288BB1A6007A895B /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC8C9E288BB1A6007A895B /* Restaurant.swift */; };
+		833DC95CC391ED3A29A771DF /* Pods_FenrirGourmetAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F9E13340BA077D9FED07ED /* Pods_FenrirGourmetAppTests.framework */; };
+		B4723C7423BBB64929D0DD0F /* Pods_FenrirGourmetApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B473121177E24045CD5B15 /* Pods_FenrirGourmetApp.framework */; };
+		BCF9FB0C7A7D2531F729720B /* Pods_FenrirGourmetApp_FenrirGourmetAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DD8ACEF9D8F44DAEE083A0F /* Pods_FenrirGourmetApp_FenrirGourmetAppUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02A93BC73DD8F89D68668E6C /* Pods-FenrirGourmetApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FenrirGourmetApp.release.xcconfig"; path = "Target Support Files/Pods-FenrirGourmetApp/Pods-FenrirGourmetApp.release.xcconfig"; sourceTree = "<group>"; };
+		27A0796FFBF47CA641B527E9 /* Pods-FenrirGourmetApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FenrirGourmetApp.debug.xcconfig"; path = "Target Support Files/Pods-FenrirGourmetApp/Pods-FenrirGourmetApp.debug.xcconfig"; sourceTree = "<group>"; };
+		35F9E13340BA077D9FED07ED /* Pods_FenrirGourmetAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FenrirGourmetAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		421B3662D297B60045048275 /* Pods-FenrirGourmetApp-FenrirGourmetAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FenrirGourmetApp-FenrirGourmetAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-FenrirGourmetApp-FenrirGourmetAppUITests/Pods-FenrirGourmetApp-FenrirGourmetAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		76BC8C5F28878EF4007A895B /* FenrirGourmetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FenrirGourmetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76BC8C6228878EF4007A895B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76BC8C6428878EF4007A895B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +65,12 @@
 		76BC8C9428879FE7007A895B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		76BC8C992887B931007A895B /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		76BC8C9C288BA16E007A895B /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		76BC8C9E288BB1A6007A895B /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		9DD8ACEF9D8F44DAEE083A0F /* Pods_FenrirGourmetApp_FenrirGourmetAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FenrirGourmetApp_FenrirGourmetAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FBBA92CCF001C672319ED0B /* Pods-FenrirGourmetAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FenrirGourmetAppTests.release.xcconfig"; path = "Target Support Files/Pods-FenrirGourmetAppTests/Pods-FenrirGourmetAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		BEAA9A89B582AD698A18992F /* Pods-FenrirGourmetAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FenrirGourmetAppTests.debug.xcconfig"; path = "Target Support Files/Pods-FenrirGourmetAppTests/Pods-FenrirGourmetAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F4B473121177E24045CD5B15 /* Pods_FenrirGourmetApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FenrirGourmetApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCDDF0415102E6CED6974925 /* Pods-FenrirGourmetApp-FenrirGourmetAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FenrirGourmetApp-FenrirGourmetAppUITests.release.xcconfig"; path = "Target Support Files/Pods-FenrirGourmetApp-FenrirGourmetAppUITests/Pods-FenrirGourmetApp-FenrirGourmetAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4723C7423BBB64929D0DD0F /* Pods_FenrirGourmetApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				833DC95CC391ED3A29A771DF /* Pods_FenrirGourmetAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +94,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCF9FB0C7A7D2531F729720B /* Pods_FenrirGourmetApp_FenrirGourmetAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42672AE5674CF43138EE4C85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27A0796FFBF47CA641B527E9 /* Pods-FenrirGourmetApp.debug.xcconfig */,
+				02A93BC73DD8F89D68668E6C /* Pods-FenrirGourmetApp.release.xcconfig */,
+				421B3662D297B60045048275 /* Pods-FenrirGourmetApp-FenrirGourmetAppUITests.debug.xcconfig */,
+				FCDDF0415102E6CED6974925 /* Pods-FenrirGourmetApp-FenrirGourmetAppUITests.release.xcconfig */,
+				BEAA9A89B582AD698A18992F /* Pods-FenrirGourmetAppTests.debug.xcconfig */,
+				9FBBA92CCF001C672319ED0B /* Pods-FenrirGourmetAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		76BC8C5628878EF4007A895B = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +121,8 @@
 				76BC8C7828878EF5007A895B /* FenrirGourmetAppTests */,
 				76BC8C8228878EF5007A895B /* FenrirGourmetAppUITests */,
 				76BC8C6028878EF4007A895B /* Products */,
+				42672AE5674CF43138EE4C85 /* Pods */,
+				A70B2004F5875CB9AFFC427D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				76BC8C992887B931007A895B /* LocationModel.swift */,
+				76BC8C9E288BB1A6007A895B /* Restaurant.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -171,6 +204,16 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		A70B2004F5875CB9AFFC427D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4B473121177E24045CD5B15 /* Pods_FenrirGourmetApp.framework */,
+				9DD8ACEF9D8F44DAEE083A0F /* Pods_FenrirGourmetApp_FenrirGourmetAppUITests.framework */,
+				35F9E13340BA077D9FED07ED /* Pods_FenrirGourmetAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,9 +221,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76BC8C8928878EF5007A895B /* Build configuration list for PBXNativeTarget "FenrirGourmetApp" */;
 			buildPhases = (
+				5B75F3E37CEF814ACD822A00 /* [CP] Check Pods Manifest.lock */,
 				76BC8C5B28878EF4007A895B /* Sources */,
 				76BC8C5C28878EF4007A895B /* Frameworks */,
 				76BC8C5D28878EF4007A895B /* Resources */,
+				770C48ED7BF259FFB136989C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,6 +240,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76BC8C8C28878EF5007A895B /* Build configuration list for PBXNativeTarget "FenrirGourmetAppTests" */;
 			buildPhases = (
+				1FB065F26FE7F9AE4F1208B7 /* [CP] Check Pods Manifest.lock */,
 				76BC8C7128878EF5007A895B /* Sources */,
 				76BC8C7228878EF5007A895B /* Frameworks */,
 				76BC8C7328878EF5007A895B /* Resources */,
@@ -213,9 +259,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76BC8C8F28878EF5007A895B /* Build configuration list for PBXNativeTarget "FenrirGourmetAppUITests" */;
 			buildPhases = (
+				E3ED3A46A39C3D276EC1FC56 /* [CP] Check Pods Manifest.lock */,
 				76BC8C7B28878EF5007A895B /* Sources */,
 				76BC8C7C28878EF5007A895B /* Frameworks */,
 				76BC8C7D28878EF5007A895B /* Resources */,
+				9661FB50494271C72719B9D3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -297,6 +345,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1FB065F26FE7F9AE4F1208B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FenrirGourmetAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B75F3E37CEF814ACD822A00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FenrirGourmetApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		770C48ED7BF259FFB136989C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FenrirGourmetApp/Pods-FenrirGourmetApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FenrirGourmetApp/Pods-FenrirGourmetApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FenrirGourmetApp/Pods-FenrirGourmetApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9661FB50494271C72719B9D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FenrirGourmetApp-FenrirGourmetAppUITests/Pods-FenrirGourmetApp-FenrirGourmetAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FenrirGourmetApp-FenrirGourmetAppUITests/Pods-FenrirGourmetApp-FenrirGourmetAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FenrirGourmetApp-FenrirGourmetAppUITests/Pods-FenrirGourmetApp-FenrirGourmetAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3ED3A46A39C3D276EC1FC56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FenrirGourmetApp-FenrirGourmetAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		76BC8C5B28878EF4007A895B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -306,6 +457,7 @@
 				76BC8C6728878EF4007A895B /* SearchViewController.swift in Sources */,
 				76BC8C9528879FE7007A895B /* DetailViewController.swift in Sources */,
 				76BC8C6328878EF4007A895B /* AppDelegate.swift in Sources */,
+				76BC8C9F288BB1A6007A895B /* Restaurant.swift in Sources */,
 				76BC8C9A2887B931007A895B /* LocationModel.swift in Sources */,
 				76BC8C6528878EF4007A895B /* SceneDelegate.swift in Sources */,
 				76BC8C9D288BA16E007A895B /* API.swift in Sources */,
@@ -480,6 +632,7 @@
 		};
 		76BC8C8A28878EF5007A895B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27A0796FFBF47CA641B527E9 /* Pods-FenrirGourmetApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -508,6 +661,7 @@
 		};
 		76BC8C8B28878EF5007A895B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02A93BC73DD8F89D68668E6C /* Pods-FenrirGourmetApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -536,6 +690,7 @@
 		};
 		76BC8C8D28878EF5007A895B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEAA9A89B582AD698A18992F /* Pods-FenrirGourmetAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -556,6 +711,7 @@
 		};
 		76BC8C8E28878EF5007A895B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FBBA92CCF001C672319ED0B /* Pods-FenrirGourmetAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -576,6 +732,7 @@
 		};
 		76BC8C9028878EF5007A895B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 421B3662D297B60045048275 /* Pods-FenrirGourmetApp-FenrirGourmetAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -594,6 +751,7 @@
 		};
 		76BC8C9128878EF5007A895B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCDDF0415102E6CED6974925 /* Pods-FenrirGourmetApp-FenrirGourmetAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
