@@ -16,12 +16,22 @@ class SearchViewController: UIViewController, CLLocationManagerDelegate {
     
     let locationManager = CLLocationManager()
     var userLocation: Location!
-    let dataList = Array(1...100)
+    var searchRestaurants = [Restaurant]()
+    let dataList = [300, 500, 1000, 2000, 3000]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setLocationManager()
-        print(dataList)
+        API.shared.getRestaurantData(latitude: 34.817, longitude: 135.490, range: 5) { [weak self] result in
+            switch result {
+            case .success(let searchRestaurants):
+                self?.searchRestaurants = searchRestaurants
+                
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+
     }
     
     @IBAction func didTapButton(_ sender: Any) {
@@ -32,6 +42,7 @@ class SearchViewController: UIViewController, CLLocationManagerDelegate {
     private func setLocationManager() {
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization() //ユーザーに現在地情報をアプリに共有するか尋ねる
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
         
         //許可されれば現在地を取得する
         if CLLocationManager.locationServicesEnabled() {

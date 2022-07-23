@@ -1,0 +1,6 @@
+framework module Pods_FenrirGourmetAppTests {
+  umbrella header "Pods-FenrirGourmetAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

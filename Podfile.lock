@@ -1,0 +1,16 @@
+PODS:
+  - Kanna (5.2.7)
+
+DEPENDENCIES:
+  - Kanna
+
+SPEC REPOS:
+  trunk:
+    - Kanna
+
+SPEC CHECKSUMS:
+  Kanna: 01cfbddc127f5ff0963692f285fcbc8a9d62d234
+
+PODFILE CHECKSUM: 1f7dff42d5e4a76ff9554efee7f52d9fb329ea75
+
+COCOAPODS: 1.11.3
