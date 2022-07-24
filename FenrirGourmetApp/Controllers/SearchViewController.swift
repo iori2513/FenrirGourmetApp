@@ -16,22 +16,24 @@ class SearchViewController: UIViewController, CLLocationManagerDelegate {
     
     let locationManager = CLLocationManager()
     var userLocation: Location!
-    var searchRestaurants = [Restaurant]()
+    var selectedDistanceIndex: Int = 0
+    
     let dataList = [300, 500, 1000, 2000, 3000]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setLocationManager()
-        API.shared.getRestaurantData(latitude: 34.817, longitude: 135.490, range: 5) { [weak self] result in
-            switch result {
-            case .success(let searchRestaurants):
-                self?.searchRestaurants = searchRestaurants
-                
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-        }
+        
 
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "searchResult"{
+            let destination = segue.destination as! SearchResultViewController
+            destination.searchVC = self
+        }
+        
     }
     
     @IBAction func didTapButton(_ sender: Any) {
@@ -60,7 +62,7 @@ class SearchViewController: UIViewController, CLLocationManagerDelegate {
           let location:CLLocationCoordinate2D
                  = CLLocationCoordinate2DMake(newLocation.coordinate.latitude, newLocation.coordinate.longitude)
          userLocation = Location(latitude: location.latitude, longitude: location.longitude)
-         print(userLocation.latitude, userLocation.longitude)
+         print(userLocation.longitude)
      }
     
     //位置情報取得に失敗した場合
@@ -96,6 +98,7 @@ extension SearchViewController: UIPickerViewDataSource, UIPickerViewDelegate {
                     didSelectRow row: Int,
                     inComponent component: Int) {
         // 処理
+        selectedDistanceIndex = row
         return
     }
     

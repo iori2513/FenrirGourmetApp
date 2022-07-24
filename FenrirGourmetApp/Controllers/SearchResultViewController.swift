@@ -8,82 +8,87 @@
 import UIKit
 
 class SearchResultViewController: UITableViewController {
+    
+    var searchRestaurants = [Restaurant]()
+    var selectedIndex: Int!
+    var searchVC: SearchViewController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        guard let location = searchVC.userLocation else {print(1)
+            return}
+        API.shared.getRestaurantData(latitude: location.latitude,
+                                     longitude: location.longitude,
+                                     range: searchVC.selectedDistanceIndex + 1)
+        { [weak self] result in
+            switch result {
+            case .success(let searchRestaurants):
+                self?.searchRestaurants = searchRestaurants
+                DispatchQueue.main.async {
+                    self?.tableView.reloadData()
+                }
+                
+            case .failure(let error):
+                self?.alert(message: error.localizedDescription)
+            }
+        }
+        
     }
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
+    
+    
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        return searchRestaurants.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = UITableViewCell()
+        var content = cell.defaultContentConfiguration()
+        let restaurant = searchRestaurants[indexPath.row]
+        
+        // cellの内容
+        content.text = restaurant.name
+        content.secondaryText = restaurant.budget
+        content.image = getImageByUrl(url: restaurant.logoImage ?? "")
+        content.textProperties.adjustsFontForContentSizeCategory = true
+        content.imageProperties.maximumSize = CGSize(width: 100, height: 100)
+        content.secondaryTextProperties.adjustsFontForContentSizeCategory = true
+        cell.contentConfiguration = content
         return cell
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedIndex = indexPath.row
+        performSegue(withIdentifier: "detail", sender: self)
     }
-    */
+    
+    
+}
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+extension SearchResultViewController {
+    //画像を取得する
+    public func getImageByUrl(url: String) -> UIImage {
+        guard let url = URL(string: url) else {return UIImage(systemName: "camera.metering.none") ?? UIImage()}
+        do {
+            let data = try Data(contentsOf: url)
+            guard let image = UIImage(data: data) else {return UIImage()}
+            return image
+        } catch let error {
+            print(error.localizedDescription)
+        }
+        return UIImage()
     }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
+    
+    //アラート表示
+    private func alert(message: String) {
+        let alert = UIAlertController(title: "エラー", message: message, preferredStyle: .alert)
+        let button = UIAlertAction(title: "OK", style: .default) { [weak self] (action) in
+            guard let self = self else { return }
+            self.dismiss(animated: true, completion: nil)
+        }
+        alert.addAction(button)
+        present(alert, animated: true, completion: nil)
     }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

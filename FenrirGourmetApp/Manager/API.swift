@@ -15,6 +15,19 @@ struct Constants {
 
 enum APIError: Error {
     case error
+    case noRestaurantError
+    
+}
+
+extension APIError: LocalizedError {
+    var errorDescription: String? {
+        switch self {
+        case .error:
+            return "もう一度お試しください"
+        case .noRestaurantError:
+            return "該当するレストランがありません"
+        }
+    }
 }
 
 class API {
@@ -22,15 +35,22 @@ class API {
     
     func getRestaurantData(latitude: Double, longitude: Double, range: Int, completion: @escaping (Result<[Restaurant], Error>) -> Void) {
         guard let url = URL(string: "\(Constants.baseURL)/?key=\(Constants.API_KEY)&lat=\(latitude)&lng=\(longitude)&range=\(range)") else {return}
-        let task = URLSession.shared.dataTask(with: url) { data, _, error in
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data, error == nil else {return}
             do {
                 let doc = try HTML(html: data, encoding: String.Encoding.utf8)
+                guard (doc.xpath("//shop").count) != 0 else {
+                    completion(.failure(APIError.noRestaurantError))
+                    return
+                    
+                }
+                
                 let nodesArray = [doc.xpath("//shop/name"),
                                   doc.xpath("//shop/logo_image"),
                                   doc.xpath("//shop/budget/name")]
+               
                 var searchRestaurants = [Restaurant]()
-                for n in 0...nodesArray.count - 1 {
+                for n in 0...nodesArray[0].count - 1 {
                     let restaurant = Restaurant(name: nodesArray[0][n].text ?? "",
                                                 logoImage: nodesArray[1][n].text ?? "",
                                                 budget: nodesArray[2][n].text ?? "")

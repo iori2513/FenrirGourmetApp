@@ -94,13 +94,13 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="uob-3d-6pZ" id="Yxw-gK-dbB"/>
-                            <outlet property="delegate" destination="uob-3d-6pZ" id="2YO-rl-k9Z"/>
+                            <outlet property="dataSource" destination="uob-3d-6pZ" id="G1D-Po-aTf"/>
+                            <outlet property="delegate" destination="uob-3d-6pZ" id="7W9-NJ-AxO"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="vcH-by-neL"/>
                     <connections>
-                        <segue destination="4RG-aI-Wbs" kind="show" id="Dmf-um-jy1"/>
+                        <segue destination="4RG-aI-Wbs" kind="show" identifier="detail" id="Dmf-um-jy1"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0G0-am-zn3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
