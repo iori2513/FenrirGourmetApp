@@ -51,6 +51,9 @@ class SearchResultViewController: UITableViewController {
         content.text = restaurant.name
         content.secondaryText = restaurant.budget
         content.image = getImageByUrl(url: restaurant.logoImage ?? "")
+        content.textProperties.adjustsFontForContentSizeCategory = true
+        content.imageProperties.maximumSize = CGSize(width: 100, height: 100)
+        content.secondaryTextProperties.adjustsFontForContentSizeCategory = true
         cell.contentConfiguration = content
         return cell
     }
@@ -66,7 +69,7 @@ class SearchResultViewController: UITableViewController {
 extension SearchResultViewController {
     //画像を取得する
     public func getImageByUrl(url: String) -> UIImage {
-        guard let url = URL(string: url) else {return UIImage()}
+        guard let url = URL(string: url) else {return UIImage(systemName: "camera.metering.none") ?? UIImage()}
         do {
             let data = try Data(contentsOf: url)
             guard let image = UIImage(data: data) else {return UIImage()}
