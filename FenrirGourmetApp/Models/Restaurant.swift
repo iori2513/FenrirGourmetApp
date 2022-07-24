@@ -18,4 +18,5 @@ struct Restaurant {
         self.budget = budget
     }
     
+    
 }

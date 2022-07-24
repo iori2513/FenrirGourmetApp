@@ -16,21 +16,13 @@ class SearchViewController: UIViewController, CLLocationManagerDelegate {
     
     let locationManager = CLLocationManager()
     var userLocation: Location!
-    var searchRestaurants = [Restaurant]()
+    
     let dataList = [300, 500, 1000, 2000, 3000]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setLocationManager()
-        API.shared.getRestaurantData(latitude: 34.817, longitude: 135.490, range: 5) { [weak self] result in
-            switch result {
-            case .success(let searchRestaurants):
-                self?.searchRestaurants = searchRestaurants
-                
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-        }
+        
 
     }
     
