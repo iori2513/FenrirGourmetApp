@@ -16,6 +16,7 @@ class SearchViewController: UIViewController, CLLocationManagerDelegate {
     
     let locationManager = CLLocationManager()
     var userLocation: Location!
+    var selectedDistanceIndex: Int = 0
     
     let dataList = [300, 500, 1000, 2000, 3000]
     
@@ -88,6 +89,7 @@ extension SearchViewController: UIPickerViewDataSource, UIPickerViewDelegate {
                     didSelectRow row: Int,
                     inComponent component: Int) {
         // 処理
+        selectedDistanceIndex = row
         return
     }
     

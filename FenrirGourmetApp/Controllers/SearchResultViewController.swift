@@ -10,10 +10,12 @@ import UIKit
 class SearchResultViewController: UITableViewController {
     
     var searchRestaurants = [Restaurant]()
+    var selectedIndex: Int!
+    var searchVC = SearchViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        API.shared.getRestaurantData(latitude: 34.817, longitude: 135.51, range: 5) { [weak self] result in
+        API.shared.getRestaurantData(latitude: 31.817, longitude: 135.51, range: searchVC.selectedDistanceIndex + 1) { [weak self] result in
             switch result {
             case .success(let searchRestaurants):
                 self?.searchRestaurants = searchRestaurants
@@ -22,7 +24,7 @@ class SearchResultViewController: UITableViewController {
                 }
                 
             case .failure(let error):
-                print(error.localizedDescription)
+                self?.alert(message: error.localizedDescription)
             }
         }
         
@@ -47,6 +49,7 @@ class SearchResultViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedIndex = indexPath.row
         performSegue(withIdentifier: "detail", sender: self)
     }
     
@@ -64,5 +67,15 @@ class SearchResultViewController: UITableViewController {
         return UIImage()
     }
     
+    
+    private func alert(message: String) {
+        let alert = UIAlertController(title: "エラー", message: message, preferredStyle: .alert)
+        let button = UIAlertAction(title: "OK", style: .default) { [weak self] (action) in
+            guard let self = self else { return }
+            self.dismiss(animated: true, completion: nil)
+        }
+        alert.addAction(button)
+        present(alert, animated: true, completion: nil)
+    }
 
 }

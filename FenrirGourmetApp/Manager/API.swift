@@ -15,6 +15,19 @@ struct Constants {
 
 enum APIError: Error {
     case error
+    case noRestaurantError
+    
+}
+
+extension APIError: LocalizedError {
+    var errorDescription: String? {
+        switch self {
+        case .error:
+            return "もう一度お試しください"
+        case .noRestaurantError:
+            return "該当するレストランがありません"
+        }
+    }
 }
 
 class API {
@@ -26,8 +39,12 @@ class API {
             guard let data = data, error == nil else {return}
             do {
                 let doc = try HTML(html: data, encoding: String.Encoding.utf8)
-                guard (doc.xpath("//shop").count) != 0 else {print(1)
-                    return}
+                guard (doc.xpath("//shop").count) != 0 else {
+                    completion(.failure(APIError.noRestaurantError))
+                    return
+                    
+                }
+                
                 let nodesArray = [doc.xpath("//shop/name"),
                                   doc.xpath("//shop/logo_image"),
                                   doc.xpath("//shop/budget/name")]
