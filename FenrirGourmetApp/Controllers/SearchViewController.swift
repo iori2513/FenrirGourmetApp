@@ -27,6 +27,15 @@ class SearchViewController: UIViewController, CLLocationManagerDelegate {
 
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "searchResult"{
+            let destination = segue.destination as! SearchResultViewController
+            destination.searchVC = self
+        }
+        
+    }
+    
     @IBAction func didTapButton(_ sender: Any) {
         performSegue(withIdentifier: "searchResult", sender: self)
     }
@@ -53,7 +62,7 @@ class SearchViewController: UIViewController, CLLocationManagerDelegate {
           let location:CLLocationCoordinate2D
                  = CLLocationCoordinate2DMake(newLocation.coordinate.latitude, newLocation.coordinate.longitude)
          userLocation = Location(latitude: location.latitude, longitude: location.longitude)
-         print(userLocation.latitude, userLocation.longitude)
+         print(userLocation.longitude)
      }
     
     //位置情報取得に失敗した場合
