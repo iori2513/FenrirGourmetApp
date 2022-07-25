@@ -76,8 +76,8 @@ class SearchResultViewController: UITableViewController {
 
 extension SearchResultViewController {
     //画像を取得する
-    public func getImageByUrl(url: String) -> UIImage {
-        guard let url = URL(string: url) else {return UIImage(systemName: "camera.metering.none") ?? UIImage()}
+    private func getImageByUrl(url: String) -> UIImage {
+        guard let url = URL(string: url) else {return UIImage()}
         do {
             let data = try Data(contentsOf: url)
             guard let image = UIImage(data: data) else {return UIImage()}

@@ -70,5 +70,29 @@ class API {
         }
         task.resume()
     }
+    
+    func getImages(id: String?, completion: @escaping (Result<[String?], Error>) -> Void) {
+        guard let id = id else {return}
+        guard let url = URL(string: "\(Constants.baseURL)/?key=\(Constants.API_KEY)&id=\(id)") else {return}
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            guard let data = data, error == nil else {return}
+            do {
+                let doc = try HTML(html: data, encoding: String.Encoding.utf8)
+                guard (doc.xpath("//shop").count) != 0 else {
+                    completion(.failure(APIError.noRestaurantError))
+                    return
+                    
+                }
+                let images: [String?] = [doc.xpath("//shop/photo/mobile/l").first?.text]
+                print(images)
+                completion(.success(images))
+                
+            } catch {
+                completion(.failure(APIError.error))
+            }
+        }
+        task.resume()
+    }
+    
                                               
 }

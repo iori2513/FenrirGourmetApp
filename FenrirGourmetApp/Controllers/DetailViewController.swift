@@ -18,13 +18,16 @@ class DetailViewController: UIViewController {
     var searchResultVC: SearchResultViewController!
     var selectedRestaurant: Restaurant!
     
-    private var titles: [String] = ["店舗名", "住所", "営業時間", "予算"]
+    @IBOutlet weak var tableView: UITableView!
+    private var titles: [String] = ["店舗名", "住所", "営業時間", "予算", "写真"]
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(selectedRestaurant.id)
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(ImageTableViewCell.self, forCellReuseIdentifier: ImageTableViewCell.identifier)
         
     }
     
@@ -39,30 +42,38 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        var cell = UITableViewCell()
         var content = cell.defaultContentConfiguration()
         content.textProperties.adjustsFontForContentSizeCategory = true
         content.textProperties.adjustsFontSizeToFitWidth = true
         switch indexPath.section {
         case 0:
+            cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
             content.text = selectedRestaurant.name
             cell.contentConfiguration = content
-            return cell
         case 1:
+            cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
             content.text = selectedRestaurant.address
             cell.contentConfiguration = content
-            return cell
         case 2:
+            cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
             content.text = selectedRestaurant.businessHour
             cell.contentConfiguration = content
-            return cell
         case 3:
+            cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
             content.text = selectedRestaurant.budget
             cell.contentConfiguration = content
-            return cell
+        case 4:
+            guard let imageCell = tableView.dequeueReusableCell(withIdentifier: ImageTableViewCell.identifier, for: indexPath) as? ImageTableViewCell else {return cell}
+            guard let id = selectedRestaurant.id else {return cell}
+            imageCell.getData(id: id)
+            return imageCell
+            
         default:
             return cell
         }
+        
+        return cell
         
     }
     
@@ -73,7 +84,9 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.section {
         case 2:
-            return 120
+            return 150
+        case 4:
+            return 200
         default:
             return 70
         }

@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7662E599288EBFC700DBC132 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662E598288EBFC700DBC132 /* DetailTableViewCell.swift */; };
+		7662E599288EBFC700DBC132 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662E598288EBFC700DBC132 /* ImageTableViewCell.swift */; };
+		7662E59B288EF6FF00DBC132 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662E59A288EF6FF00DBC132 /* ImageCollectionViewCell.swift */; };
 		76BC8C6328878EF4007A895B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC8C6228878EF4007A895B /* AppDelegate.swift */; };
 		76BC8C6528878EF4007A895B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC8C6428878EF4007A895B /* SceneDelegate.swift */; };
 		76BC8C6728878EF4007A895B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC8C6628878EF4007A895B /* SearchViewController.swift */; };
@@ -49,7 +50,8 @@
 		27A0796FFBF47CA641B527E9 /* Pods-FenrirGourmetApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FenrirGourmetApp.debug.xcconfig"; path = "Target Support Files/Pods-FenrirGourmetApp/Pods-FenrirGourmetApp.debug.xcconfig"; sourceTree = "<group>"; };
 		35F9E13340BA077D9FED07ED /* Pods_FenrirGourmetAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FenrirGourmetAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		421B3662D297B60045048275 /* Pods-FenrirGourmetApp-FenrirGourmetAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FenrirGourmetApp-FenrirGourmetAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-FenrirGourmetApp-FenrirGourmetAppUITests/Pods-FenrirGourmetApp-FenrirGourmetAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		7662E598288EBFC700DBC132 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		7662E598288EBFC700DBC132 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		7662E59A288EF6FF00DBC132 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		76BC8C5F28878EF4007A895B /* FenrirGourmetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FenrirGourmetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76BC8C6228878EF4007A895B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76BC8C6428878EF4007A895B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -185,7 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				76BC8C6828878EF4007A895B /* Main.storyboard */,
-				7662E598288EBFC700DBC132 /* DetailTableViewCell.swift */,
+				7662E598288EBFC700DBC132 /* ImageTableViewCell.swift */,
+				7662E59A288EF6FF00DBC132 /* ImageCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -456,12 +459,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7662E599288EBFC700DBC132 /* DetailTableViewCell.swift in Sources */,
+				7662E599288EBFC700DBC132 /* ImageTableViewCell.swift in Sources */,
 				76BC8C9328879EB1007A895B /* SearchResultViewController.swift in Sources */,
 				76BC8C6728878EF4007A895B /* SearchViewController.swift in Sources */,
 				76BC8C9528879FE7007A895B /* DetailViewController.swift in Sources */,
 				76BC8C6328878EF4007A895B /* AppDelegate.swift in Sources */,
 				76BC8C9F288BB1A6007A895B /* Restaurant.swift in Sources */,
+				7662E59B288EF6FF00DBC132 /* ImageCollectionViewCell.swift in Sources */,
 				76BC8C9A2887B931007A895B /* LocationModel.swift in Sources */,
 				76BC8C6528878EF4007A895B /* SceneDelegate.swift in Sources */,
 				76BC8C9D288BA16E007A895B /* API.swift in Sources */,
