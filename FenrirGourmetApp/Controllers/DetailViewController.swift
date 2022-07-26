@@ -14,12 +14,11 @@
 import UIKit
 import MapKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UITableViewController {
     
     var searchResultVC: SearchResultViewController!
     var selectedRestaurant: Restaurant!
     
-    @IBOutlet weak var tableView: UITableView!
     private var titles: [String] = ["店舗名", "住所", "営業時間", "予算", "写真", "アクセス"]
     
     
@@ -28,27 +27,21 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.register(ImageTableViewCell.self, forCellReuseIdentifier: ImageTableViewCell.identifier)
-        tableView.register(MapTableViewCell.self, forCellReuseIdentifier: MapTableViewCell.identifier)
+        self.tableView.register(ImageTableViewCell.self, forCellReuseIdentifier: ImageTableViewCell.identifier)
+        self.tableView.register(MapTableViewCell.self, forCellReuseIdentifier: MapTableViewCell.identifier)
+        
         
         
         
     }
     
-    
-    
-    
-}
 
-extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
         
-    func numberOfSections(in tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return titles.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = UITableViewCell()
         var content = cell.defaultContentConfiguration()
         content.textProperties.adjustsFontForContentSizeCategory = true
@@ -57,6 +50,8 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
         case 0:
             cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
             content.text = selectedRestaurant.name
+            content.textProperties.font = UIFont.boldSystemFont(ofSize: 25)
+            content.textProperties.color = .systemTeal
             cell.contentConfiguration = content
         case 1:
             cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
@@ -97,7 +92,7 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
         
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 5:
             return 2
@@ -106,8 +101,10 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.section {
+        case 0:
+            return 70
         case 2:
             return 150
         case 4:
@@ -115,16 +112,16 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
         case 5:
             switch indexPath.row {
             case 1:
-                return 400
+                return 600
             default:
                 return 70
             }
         default:
-            return 70
+            return 50
         }
     }
     
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return titles[section]
     }
     

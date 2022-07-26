@@ -69,7 +69,7 @@ class SearchResultViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectedIndex = indexPath.row
+        selectedIndex = indexPath.section
         performSegue(withIdentifier: "detail", sender: self)
     }
     
@@ -88,6 +88,7 @@ class SearchResultViewController: UITableViewController {
         label.adjustsFontSizeToFitWidth = true
         label.font = UIFont.boldSystemFont(ofSize: 20)
         label.textColor = .systemTeal
+        tableView.backgroundColor = .white
         return label
     }
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
