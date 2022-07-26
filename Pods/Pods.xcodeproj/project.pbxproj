@@ -61,7 +61,7 @@
 		2C9ABE235D3CE12F3B249A338E8E6E19 /* Kanna.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kanna.release.xcconfig; sourceTree = "<group>"; };
 		306CC0B902F3850D26F8F1883CA6A8EC /* Pods-FenrirGourmetAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FenrirGourmetAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3ADA7D80CE3EA9649BAD045246D314F9 /* Pods-FenrirGourmetAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FenrirGourmetAppTests-umbrella.h"; sourceTree = "<group>"; };
-		3EA922F9B70178D64EE578C60F4DD23B /* Kanna */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kanna; path = Kanna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EA922F9B70178D64EE578C60F4DD23B /* Kanna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kanna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43AF3277B984F834DBCEB7A5FE455720 /* Pods-FenrirGourmetAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FenrirGourmetAppTests.modulemap"; sourceTree = "<group>"; };
 		4756AD718BA785581D5F9261B371E423 /* Pods-FenrirGourmetApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FenrirGourmetApp-frameworks.sh"; sourceTree = "<group>"; };
 		478A725E7CD015AFA3A522D58998E96C /* Pods-FenrirGourmetApp-FenrirGourmetAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FenrirGourmetApp-FenrirGourmetAppUITests.modulemap"; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 		8A5F727644580DDAD4714EF11EA1EF8A /* Pods-FenrirGourmetApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FenrirGourmetApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8E61EED7B21ED8DA0848CE6CEBD801A7 /* Pods-FenrirGourmetApp-FenrirGourmetAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FenrirGourmetApp-FenrirGourmetAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		91FC75ECAE863AABD2ABFDBF964C0A23 /* Pods-FenrirGourmetAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FenrirGourmetAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A95557A9CE021296168C5F640C07FA2D /* Pods-FenrirGourmetApp-FenrirGourmetAppUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FenrirGourmetApp-FenrirGourmetAppUITests"; path = Pods_FenrirGourmetApp_FenrirGourmetAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA4E9FCBD13F04070A4ACDB5B1AFFE96 /* Pods-FenrirGourmetApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FenrirGourmetApp-Info.plist"; sourceTree = "<group>"; };
 		AA8BF50F4D27F4655D88F5F88F177930 /* Pods-FenrirGourmetApp-FenrirGourmetAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FenrirGourmetApp-FenrirGourmetAppUITests-umbrella.h"; sourceTree = "<group>"; };
@@ -182,7 +182,6 @@
 				117A07D2F2BF480E5B7CBB1D7D6FA636 /* libxmlParserOption.swift */,
 				155418EE731BC926FEB8C7D5ACCD6B74 /* Support Files */,
 			);
-			name = Kanna;
 			path = Kanna;
 			sourceTree = "<group>";
 		};
@@ -213,7 +212,7 @@
 		973F082F324AF35BC12AD0E15F8BE4D2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3EA922F9B70178D64EE578C60F4DD23B /* Kanna */,
+				3EA922F9B70178D64EE578C60F4DD23B /* Kanna.framework */,
 				DFE519FBFB4F5B89A8E16D5924458B3C /* Pods-FenrirGourmetApp */,
 				A95557A9CE021296168C5F640C07FA2D /* Pods-FenrirGourmetApp-FenrirGourmetAppUITests */,
 				CE00232D4D2569A8DC594CF3FCA72008 /* Pods-FenrirGourmetAppTests */,
@@ -366,7 +365,7 @@
 			);
 			name = Kanna;
 			productName = Kanna;
-			productReference = 3EA922F9B70178D64EE578C60F4DD23B /* Kanna */;
+			productReference = 3EA922F9B70178D64EE578C60F4DD23B /* Kanna.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9FDD58749C334C4D7B06F1E096E95E04 /* Pods-FenrirGourmetApp */ = {
@@ -395,7 +394,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1340;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -767,7 +766,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Kanna/Kanna-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Kanna/Kanna-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -878,7 +877,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Kanna/Kanna-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Kanna/Kanna-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
