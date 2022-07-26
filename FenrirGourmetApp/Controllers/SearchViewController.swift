@@ -62,7 +62,6 @@ class SearchViewController: UIViewController, CLLocationManagerDelegate {
           let location:CLLocationCoordinate2D
                  = CLLocationCoordinate2DMake(newLocation.coordinate.latitude, newLocation.coordinate.longitude)
          userLocation = Location(latitude: location.latitude, longitude: location.longitude)
-         print(userLocation.longitude)
      }
     
     //位置情報取得に失敗した場合

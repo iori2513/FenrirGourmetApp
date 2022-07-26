@@ -8,14 +8,26 @@
 import Foundation
 
 struct Restaurant {
+    let id: String?
     let name: String?
-    let logoImage: String?
+    let mainLogo: String?
     let budget: String?
+    let address: String?
+    let businessHour: String?
+    let access: String?
+    let latitude: Double
+    let longitude: Double
     
-    init(name: String, logoImage: String, budget: String) {
+    init(id: String, name: String, mainLogo: String, budget: String, address: String, businessHour: String, access: String, latitude: Double, longitude: Double) {
+        self.id = id
         self.name = name
-        self.logoImage = logoImage
+        self.mainLogo = mainLogo
         self.budget = budget
+        self.address = address
+        self.businessHour = businessHour
+        self.access = access
+        self.latitude = latitude
+        self.longitude = longitude
     }
     
     

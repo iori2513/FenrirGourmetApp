@@ -45,15 +45,27 @@ class API {
                     
                 }
                 
-                let nodesArray = [doc.xpath("//shop/name"),
+                let nodesArray = [doc.xpath("//shop/id"),
+                                  doc.xpath("//shop/name"),
                                   doc.xpath("//shop/logo_image"),
-                                  doc.xpath("//shop/budget/name")]
+                                  doc.xpath("//shop/budget/name"),
+                                  doc.xpath("//shop/address"),
+                                  doc.xpath("//shop/open"),
+                                  doc.xpath("//shop/mobile_access"),
+                                  doc.xpath("//shop/lat"),
+                                  doc.xpath("//shop/lng")]
                
                 var searchRestaurants = [Restaurant]()
                 for n in 0...nodesArray[0].count - 1 {
-                    let restaurant = Restaurant(name: nodesArray[0][n].text ?? "",
-                                                logoImage: nodesArray[1][n].text ?? "",
-                                                budget: nodesArray[2][n].text ?? "")
+                    let restaurant = Restaurant(id: nodesArray[0][n].text ?? "",
+                                                name: nodesArray[1][n].text ?? "",
+                                                mainLogo: nodesArray[2][n].text ?? "",
+                                                budget: nodesArray[3][n].text ?? "",
+                                                address: nodesArray[4][n].text ?? "",
+                                                businessHour: nodesArray[5][n].text ?? "",
+                                                access: nodesArray[6][n].text ?? "",
+                                                latitude: atof(nodesArray[7][n].text),
+                                                longitude: atof(nodesArray[8][n].text))
                     searchRestaurants.append(restaurant)
                 }
                 completion(.success(searchRestaurants))
@@ -64,5 +76,29 @@ class API {
         }
         task.resume()
     }
+    
+    func getImages(id: String?, completion: @escaping (Result<[String?], Error>) -> Void) {
+        guard let id = id else {return}
+        guard let url = URL(string: "\(Constants.baseURL)/?key=\(Constants.API_KEY)&id=\(id)") else {return}
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            guard let data = data, error == nil else {return}
+            do {
+                let doc = try HTML(html: data, encoding: String.Encoding.utf8)
+                guard (doc.xpath("//shop").count) != 0 else {
+                    completion(.failure(APIError.noRestaurantError))
+                    return
+                    
+                }
+                let images: [String?] = [doc.xpath("//shop/photo/mobile/l").first?.text]
+                print(images)
+                completion(.success(images))
+                
+            } catch {
+                completion(.failure(APIError.error))
+            }
+        }
+        task.resume()
+    }
+    
                                               
 }

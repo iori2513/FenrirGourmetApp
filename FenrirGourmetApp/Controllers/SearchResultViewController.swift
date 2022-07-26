@@ -35,6 +35,14 @@ class SearchResultViewController: UITableViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "detail"{
+            let destination = segue.destination as! DetailViewController
+            destination.selectedRestaurant = searchRestaurants[selectedIndex]
+        }
+        
+    }
     
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -50,7 +58,7 @@ class SearchResultViewController: UITableViewController {
         // cellの内容
         content.text = restaurant.name
         content.secondaryText = restaurant.budget
-        content.image = getImageByUrl(url: restaurant.logoImage ?? "")
+        content.image = getImageByUrl(url: restaurant.mainLogo ?? "")
         content.textProperties.adjustsFontForContentSizeCategory = true
         content.imageProperties.maximumSize = CGSize(width: 100, height: 100)
         content.secondaryTextProperties.adjustsFontForContentSizeCategory = true
@@ -68,8 +76,8 @@ class SearchResultViewController: UITableViewController {
 
 extension SearchResultViewController {
     //画像を取得する
-    public func getImageByUrl(url: String) -> UIImage {
-        guard let url = URL(string: url) else {return UIImage(systemName: "camera.metering.none") ?? UIImage()}
+    private func getImageByUrl(url: String) -> UIImage {
+        guard let url = URL(string: url) else {return UIImage()}
         do {
             let data = try Data(contentsOf: url)
             guard let image = UIImage(data: data) else {return UIImage()}
