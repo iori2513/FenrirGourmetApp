@@ -50,7 +50,10 @@ class API {
                                   doc.xpath("//shop/logo_image"),
                                   doc.xpath("//shop/budget/name"),
                                   doc.xpath("//shop/address"),
-                                  doc.xpath("//shop/open")]
+                                  doc.xpath("//shop/open"),
+                                  doc.xpath("//shop/mobile_access"),
+                                  doc.xpath("//shop/lat"),
+                                  doc.xpath("//shop/lng")]
                
                 var searchRestaurants = [Restaurant]()
                 for n in 0...nodesArray[0].count - 1 {
@@ -59,7 +62,10 @@ class API {
                                                 mainLogo: nodesArray[2][n].text ?? "",
                                                 budget: nodesArray[3][n].text ?? "",
                                                 address: nodesArray[4][n].text ?? "",
-                                                businessHour: nodesArray[5][n].text ?? "")
+                                                businessHour: nodesArray[5][n].text ?? "",
+                                                access: nodesArray[6][n].text ?? "",
+                                                latitude: atof(nodesArray[7][n].text),
+                                                longitude: atof(nodesArray[8][n].text))
                     searchRestaurants.append(restaurant)
                 }
                 completion(.success(searchRestaurants))
