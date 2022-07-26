@@ -47,20 +47,22 @@ class SearchResultViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return searchRestaurants.count
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         var content = cell.defaultContentConfiguration()
-        let restaurant = searchRestaurants[indexPath.row]
+        cell.backgroundColor = .tertiarySystemGroupedBackground
+        let restaurant = searchRestaurants[indexPath.section]
         
         // cellの内容
-        content.text = restaurant.name
-        content.secondaryText = restaurant.budget
+        content.text = restaurant.keywords
+        content.textProperties.font = UIFont.boldSystemFont(ofSize: 15)
+        content.secondaryText = restaurant.access
         content.image = getImageByUrl(url: restaurant.mainLogo ?? "")
         content.textProperties.adjustsFontForContentSizeCategory = true
-        content.imageProperties.maximumSize = CGSize(width: 100, height: 100)
+        content.imageToTextPadding = 10
         content.secondaryTextProperties.adjustsFontForContentSizeCategory = true
         cell.contentConfiguration = content
         return cell
@@ -71,7 +73,26 @@ class SearchResultViewController: UITableViewController {
         performSegue(withIdentifier: "detail", sender: self)
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
+    }
     
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return searchRestaurants.count
+    }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let label = UILabel(frame: CGRect(x:0, y:0, width: tableView.bounds.width, height: 70))
+        label.text = searchRestaurants[section].name
+        label.adjustsFontForContentSizeCategory = true
+        label.adjustsFontSizeToFitWidth = true
+        label.font = UIFont.boldSystemFont(ofSize: 20)
+        label.textColor = .systemTeal
+        return label
+    }
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50
+    }
 }
 
 extension SearchResultViewController {

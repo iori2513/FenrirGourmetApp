@@ -17,8 +17,9 @@ struct Restaurant {
     let access: String?
     let latitude: Double
     let longitude: Double
+    let keywords: String?
     
-    init(id: String, name: String, mainLogo: String, budget: String, address: String, businessHour: String, access: String, latitude: Double, longitude: Double) {
+    init(id: String, name: String, mainLogo: String, budget: String, address: String, businessHour: String, access: String, latitude: Double, longitude: Double, keywords: String?) {
         self.id = id
         self.name = name
         self.mainLogo = mainLogo
@@ -28,6 +29,7 @@ struct Restaurant {
         self.access = access
         self.latitude = latitude
         self.longitude = longitude
+        self.keywords = keywords
     }
     
     

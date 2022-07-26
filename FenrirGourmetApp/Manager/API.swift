@@ -53,7 +53,8 @@ class API {
                                   doc.xpath("//shop/open"),
                                   doc.xpath("//shop/mobile_access"),
                                   doc.xpath("//shop/lat"),
-                                  doc.xpath("//shop/lng")]
+                                  doc.xpath("//shop/lng"),
+                                  doc.xpath("//shop/genre/catch")]
                
                 var searchRestaurants = [Restaurant]()
                 for n in 0...nodesArray[0].count - 1 {
@@ -65,7 +66,8 @@ class API {
                                                 businessHour: nodesArray[5][n].text ?? "",
                                                 access: nodesArray[6][n].text ?? "",
                                                 latitude: atof(nodesArray[7][n].text),
-                                                longitude: atof(nodesArray[8][n].text))
+                                                longitude: atof(nodesArray[8][n].text),
+                                                keywords: nodesArray[9][n].text ?? "")
                     searchRestaurants.append(restaurant)
                 }
                 completion(.success(searchRestaurants))
