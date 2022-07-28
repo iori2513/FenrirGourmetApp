@@ -10,7 +10,6 @@
 		7662E599288EBFC700DBC132 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662E598288EBFC700DBC132 /* ImageTableViewCell.swift */; };
 		7662E59B288EF6FF00DBC132 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662E59A288EF6FF00DBC132 /* ImageCollectionViewCell.swift */; };
 		7662E59D288FB20A00DBC132 /* MapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662E59C288FB20A00DBC132 /* MapTableViewCell.swift */; };
-		7662E59F28925D1C00DBC132 /* 仕様書.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7662E59E28925D1C00DBC132 /* 仕様書.txt */; };
 		76BC8C6328878EF4007A895B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC8C6228878EF4007A895B /* AppDelegate.swift */; };
 		76BC8C6528878EF4007A895B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC8C6428878EF4007A895B /* SceneDelegate.swift */; };
 		76BC8C6728878EF4007A895B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC8C6628878EF4007A895B /* SearchViewController.swift */; };
@@ -55,7 +54,6 @@
 		7662E598288EBFC700DBC132 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		7662E59A288EF6FF00DBC132 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		7662E59C288FB20A00DBC132 /* MapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTableViewCell.swift; sourceTree = "<group>"; };
-		7662E59E28925D1C00DBC132 /* 仕様書.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "仕様書.txt"; sourceTree = "<group>"; };
 		76BC8C5F28878EF4007A895B /* FenrirGourmetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FenrirGourmetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76BC8C6228878EF4007A895B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76BC8C6428878EF4007A895B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -156,7 +154,6 @@
 				76BC8C6B28878EF5007A895B /* Assets.xcassets */,
 				76BC8C6D28878EF5007A895B /* LaunchScreen.storyboard */,
 				76BC8C7028878EF5007A895B /* Info.plist */,
-				7662E59E28925D1C00DBC132 /* 仕様書.txt */,
 			);
 			path = FenrirGourmetApp;
 			sourceTree = "<group>";
@@ -337,7 +334,6 @@
 			files = (
 				76BC8C6F28878EF5007A895B /* LaunchScreen.storyboard in Resources */,
 				76BC8C6C28878EF5007A895B /* Assets.xcassets in Resources */,
-				7662E59F28925D1C00DBC132 /* 仕様書.txt in Resources */,
 				76BC8C6A28878EF4007A895B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

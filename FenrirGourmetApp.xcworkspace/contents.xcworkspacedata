@@ -5,6 +5,9 @@
       location = "group:FenrirGourmetApp.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:FenrirGourmetApp/../&#x4ed5;&#x69d8;&#x66f8;.txt">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
