@@ -142,7 +142,7 @@
 		9A1EAC789C32611F15C1C1A9100B4845 /* PKHUDSuccessView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDSuccessView.swift; path = PKHUD/PKHUDSuccessView.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A07A91DCA1EAAE0BF74D83087479A889 /* libxmlParserOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlParserOption.swift; path = Sources/Kanna/libxmlParserOption.swift; sourceTree = "<group>"; };
-		A95557A9CE021296168C5F640C07FA2D /* Pods-FenrirGourmetApp-FenrirGourmetAppUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FenrirGourmetApp-FenrirGourmetAppUITests"; path = Pods_FenrirGourmetApp_FenrirGourmetAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A95557A9CE021296168C5F640C07FA2D /* Pods_FenrirGourmetApp_FenrirGourmetAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FenrirGourmetApp_FenrirGourmetAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A959906F85DDD8605F60804AC542E9C1 /* Kanna.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kanna.swift; path = Sources/Kanna/Kanna.swift; sourceTree = "<group>"; };
 		AA4E9FCBD13F04070A4ACDB5B1AFFE96 /* Pods-FenrirGourmetApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FenrirGourmetApp-Info.plist"; sourceTree = "<group>"; };
 		AA8BF50F4D27F4655D88F5F88F177930 /* Pods-FenrirGourmetApp-FenrirGourmetAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FenrirGourmetApp-FenrirGourmetAppUITests-umbrella.h"; sourceTree = "<group>"; };
@@ -155,12 +155,12 @@
 		C6858B64192E96300EF2C58857646030 /* PKHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PKHUD-Info.plist"; sourceTree = "<group>"; };
 		C9E16F3332EF643FBF10529C771F11EA /* Pods-FenrirGourmetAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FenrirGourmetAppTests-dummy.m"; sourceTree = "<group>"; };
 		CDF99DE43E95EEF4E6151EA74BDBB6E5 /* Kanna-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Kanna-Info.plist"; sourceTree = "<group>"; };
-		CE00232D4D2569A8DC594CF3FCA72008 /* Pods-FenrirGourmetAppTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FenrirGourmetAppTests"; path = Pods_FenrirGourmetAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE00232D4D2569A8DC594CF3FCA72008 /* Pods_FenrirGourmetAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FenrirGourmetAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF0A259668F5D88345D952C8094ECF45 /* Pods-FenrirGourmetApp-FenrirGourmetAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FenrirGourmetApp-FenrirGourmetAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D2081BC39BC4360483B2195FA25E92EF /* libxmlHTMLNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlHTMLNode.swift; path = Sources/Kanna/libxmlHTMLNode.swift; sourceTree = "<group>"; };
 		D6F541A3F0E9FCBE006330262A11D08B /* Pods-FenrirGourmetApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FenrirGourmetApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		D8A02222332AF285ADFF694B1DC6B645 /* Pods-FenrirGourmetApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FenrirGourmetApp.modulemap"; sourceTree = "<group>"; };
-		DFE519FBFB4F5B89A8E16D5924458B3C /* Pods-FenrirGourmetApp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FenrirGourmetApp"; path = Pods_FenrirGourmetApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE519FBFB4F5B89A8E16D5924458B3C /* Pods_FenrirGourmetApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FenrirGourmetApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2A0897D95D96B77871978D3511E5011 /* Pods-FenrirGourmetApp-FenrirGourmetAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FenrirGourmetApp-FenrirGourmetAppUITests-dummy.m"; sourceTree = "<group>"; };
 		E6DF38C63EB53AAC26C1F2655DD2EBC0 /* Kanna.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kanna.h; path = Sources/Kanna/Kanna.h; sourceTree = "<group>"; };
 		E872BD1758D70097F5C5EF74F566A3F2 /* Window.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Window.swift; path = PKHUD/Window.swift; sourceTree = "<group>"; };
@@ -369,9 +369,9 @@
 				3EA922F9B70178D64EE578C60F4DD23B /* Kanna.framework */,
 				05A2656F46E8CA87E77A035911B33D10 /* PKHUD.framework */,
 				BFCB2D5C605270A32522299AED3B5AE6 /* PKHUDResources.bundle */,
-				DFE519FBFB4F5B89A8E16D5924458B3C /* Pods-FenrirGourmetApp */,
-				A95557A9CE021296168C5F640C07FA2D /* Pods-FenrirGourmetApp-FenrirGourmetAppUITests */,
-				CE00232D4D2569A8DC594CF3FCA72008 /* Pods-FenrirGourmetAppTests */,
+				DFE519FBFB4F5B89A8E16D5924458B3C /* Pods_FenrirGourmetApp.framework */,
+				A95557A9CE021296168C5F640C07FA2D /* Pods_FenrirGourmetApp_FenrirGourmetAppUITests.framework */,
+				CE00232D4D2569A8DC594CF3FCA72008 /* Pods_FenrirGourmetAppTests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -496,7 +496,7 @@
 			);
 			name = "Pods-FenrirGourmetApp-FenrirGourmetAppUITests";
 			productName = Pods_FenrirGourmetApp_FenrirGourmetAppUITests;
-			productReference = A95557A9CE021296168C5F640C07FA2D /* Pods-FenrirGourmetApp-FenrirGourmetAppUITests */;
+			productReference = A95557A9CE021296168C5F640C07FA2D /* Pods_FenrirGourmetApp_FenrirGourmetAppUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8CA41E89F0BE22F170546E7CAF7CCAF1 /* Pods-FenrirGourmetAppTests */ = {
@@ -515,7 +515,7 @@
 			);
 			name = "Pods-FenrirGourmetAppTests";
 			productName = Pods_FenrirGourmetAppTests;
-			productReference = CE00232D4D2569A8DC594CF3FCA72008 /* Pods-FenrirGourmetAppTests */;
+			productReference = CE00232D4D2569A8DC594CF3FCA72008 /* Pods_FenrirGourmetAppTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		93AC747EDE1EE56F89BBF405C1D67027 /* Kanna */ = {
@@ -553,7 +553,7 @@
 			);
 			name = "Pods-FenrirGourmetApp";
 			productName = Pods_FenrirGourmetApp;
-			productReference = DFE519FBFB4F5B89A8E16D5924458B3C /* Pods-FenrirGourmetApp */;
+			productReference = DFE519FBFB4F5B89A8E16D5924458B3C /* Pods_FenrirGourmetApp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A7F7332F1050B42A501616421AC869EB /* PKHUD-PKHUDResources */ = {
@@ -779,7 +779,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/PKHUD/PKHUD-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/PKHUD/PKHUD-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -792,7 +792,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -871,11 +871,11 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PKHUD";
 				IBSC_MODULE = PKHUD;
 				INFOPLIST_FILE = "Target Support Files/PKHUD/ResourceBundle-PKHUDResources-PKHUD-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				PRODUCT_NAME = PKHUDResources;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
@@ -973,7 +973,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1010,7 +1010,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1047,7 +1047,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1085,7 +1085,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1106,7 +1106,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/PKHUD/PKHUD-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/PKHUD/PKHUD-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1119,7 +1119,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1157,7 +1157,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1192,7 +1192,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1206,11 +1206,11 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PKHUD";
 				IBSC_MODULE = PKHUD;
 				INFOPLIST_FILE = "Target Support Files/PKHUD/ResourceBundle-PKHUDResources-PKHUD-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				PRODUCT_NAME = PKHUDResources;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -1243,7 +1243,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1280,7 +1280,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
