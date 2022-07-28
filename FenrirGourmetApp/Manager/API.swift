@@ -95,7 +95,6 @@ class API {
                                          "https://thumb.ac-illust.com/eb/ebe435f09324eb334280f879807e7842_w.jpeg",
                                          "https://thumb.ac-illust.com/eb/ebe435f09324eb334280f879807e7842_w.jpeg",
                                          "https://thumb.ac-illust.com/eb/ebe435f09324eb334280f879807e7842_w.jpeg"]
-                print(images)
                 completion(.success(images))
                 
             } catch {

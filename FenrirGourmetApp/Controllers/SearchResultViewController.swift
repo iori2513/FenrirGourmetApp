@@ -15,8 +15,10 @@ class SearchResultViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let location = searchVC.userLocation else {print(1)
-            return}
+        guard let location = searchVC.userLocation else {
+            alert(message: "現在地の情報がありません")
+            return
+        }
         API.shared.getRestaurantData(latitude: location.latitude,
                                      longitude: location.longitude,
                                      range: searchVC.selectedDistanceIndex + 1)
@@ -52,11 +54,11 @@ class SearchResultViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        var content = cell.defaultContentConfiguration()
-        cell.backgroundColor = .tertiarySystemGroupedBackground
         let restaurant = searchRestaurants[indexPath.section]
+        var content = cell.defaultContentConfiguration()
         
         // cellの内容
+        cell.backgroundColor = .tertiarySystemGroupedBackground
         content.text = restaurant.keywords
         content.textProperties.font = UIFont.boldSystemFont(ofSize: 15)
         content.secondaryText = restaurant.access

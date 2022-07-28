@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreLocation
+import PKHUD
 
 class SearchViewController: UIViewController, CLLocationManagerDelegate {
 
@@ -17,14 +18,20 @@ class SearchViewController: UIViewController, CLLocationManagerDelegate {
     let locationManager = CLLocationManager()
     var userLocation: Location!
     var selectedDistanceIndex: Int = 0
+    var indicator = UIActivityIndicatorView()
     
     let dataList = [300, 500, 1000, 2000, 3000]
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setLocationManager()
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        if locationManager.authorizationStatus == .authorizedWhenInUse ||
+            locationManager.authorizationStatus == .authorizedAlways {
+            locationManager.startUpdatingLocation()
+        }
         
-
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -40,21 +47,6 @@ class SearchViewController: UIViewController, CLLocationManagerDelegate {
         performSegue(withIdentifier: "searchResult", sender: self)
     }
     
-    
-    private func setLocationManager() {
-        locationManager.delegate = self
-        locationManager.requestWhenInUseAuthorization() //ユーザーに現在地情報をアプリに共有するか尋ねる
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        
-        //許可されれば現在地を取得する
-        if CLLocationManager.locationServicesEnabled() {
-            locationManager.requestLocation()
-        }
-        else {
-            //アラート表示
-        }
-    }
-    
     // 位置情報を取得した場合
      func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
          guard let newLocation = locations.last else { return }
@@ -62,15 +54,44 @@ class SearchViewController: UIViewController, CLLocationManagerDelegate {
           let location:CLLocationCoordinate2D
                  = CLLocationCoordinate2DMake(newLocation.coordinate.latitude, newLocation.coordinate.longitude)
          userLocation = Location(latitude: location.latitude, longitude: location.longitude)
+         DispatchQueue.main.async {
+             HUD.hide()
+         }
+         
      }
     
     //位置情報取得に失敗した場合
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        DispatchQueue.main.async {
+            HUD.hide()
+        }
         print("\(error.localizedDescription)")
     }
-
-
+    
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+         let status = manager.authorizationStatus
+         switch status {
+           case .authorizedAlways, .authorizedWhenInUse:
+             locationManager.desiredAccuracy = kCLLocationAccuracyBest
+             DispatchQueue.main.async {
+                 HUD.show(.progress)
+             }
+             locationManager.startUpdatingLocation()
+           case .notDetermined, .denied, .restricted:
+            return
+            
+           default:
+            return
+        }
+    }
+    
+    
 }
+
+
+
+
+
 
 extension SearchViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     // UIPickerViewの列の数
@@ -102,3 +123,4 @@ extension SearchViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     }
     
 }
+

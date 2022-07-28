@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-FenrirGourmetApp/Pods-FenrirGourmetApp-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Kanna/Kanna.framework
+${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework

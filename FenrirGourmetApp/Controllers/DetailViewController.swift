@@ -14,6 +14,16 @@
 import UIKit
 import MapKit
 
+enum RowSection: Int {
+    case name = 0
+    case address = 1
+    case businessHour = 2
+    case budget = 3
+    case image = 4
+    case access = 5
+    
+}
+
 class DetailViewController: UITableViewController {
     
     var searchResultVC: SearchResultViewController!
@@ -30,9 +40,6 @@ class DetailViewController: UITableViewController {
         self.tableView.register(ImageTableViewCell.self, forCellReuseIdentifier: ImageTableViewCell.identifier)
         self.tableView.register(MapTableViewCell.self, forCellReuseIdentifier: MapTableViewCell.identifier)
         
-        
-        
-        
     }
     
 
@@ -47,31 +54,35 @@ class DetailViewController: UITableViewController {
         content.textProperties.adjustsFontForContentSizeCategory = true
         content.textProperties.adjustsFontSizeToFitWidth = true
         switch indexPath.section {
-        case 0:
+        case RowSection.name.rawValue:
             cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
             content.text = selectedRestaurant.name
             content.textProperties.font = UIFont.boldSystemFont(ofSize: 25)
             content.textProperties.color = .systemTeal
             cell.contentConfiguration = content
-        case 1:
+            
+        case RowSection.address.rawValue:
             cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
             content.text = selectedRestaurant.address
             cell.contentConfiguration = content
-        case 2:
+            
+        case RowSection.businessHour.rawValue:
             cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
             content.text = selectedRestaurant.businessHour
             cell.contentConfiguration = content
-        case 3:
+            
+        case RowSection.budget.rawValue:
             cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
             content.text = selectedRestaurant.budget
             cell.contentConfiguration = content
-        case 4:
+            
+        case RowSection.image.rawValue:
             guard let imageCell = tableView.dequeueReusableCell(withIdentifier: ImageTableViewCell.identifier, for: indexPath) as? ImageTableViewCell else {return cell}
             guard let id = selectedRestaurant.id else {return cell}
             imageCell.getData(id: id)
             return imageCell
             
-        case 5:
+        case RowSection.access.rawValue:
             switch indexPath.row {
             case 0:
                 cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
@@ -84,6 +95,7 @@ class DetailViewController: UITableViewController {
             default:
                 return cell
             }
+            
         default:
             return cell
         }
@@ -94,7 +106,7 @@ class DetailViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
-        case 5:
+        case RowSection.access.rawValue:
             return 2
         default:
             return 1
@@ -103,18 +115,18 @@ class DetailViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.section {
-        case 0:
+        case RowSection.name.rawValue:
             return 70
-        case 2:
+        case RowSection.businessHour.rawValue:
             return 150
-        case 4:
+        case RowSection.image.rawValue:
             return 200
-        case 5:
+        case RowSection.access.rawValue:
             switch indexPath.row {
             case 1:
                 return 600
             default:
-                return 70
+                return 50
             }
         default:
             return 50
